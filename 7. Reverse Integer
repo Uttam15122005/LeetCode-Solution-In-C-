@@ -1,0 +1,14 @@
+class Solution {
+public:
+    int reverse(int num) {
+        int reveNum = 0;
+        while(num != 0){
+            int digit = num % 10;
+            reveNum = reveNum * 10 + digit;
+            num = num/10;
+            
+        }
+        return reveNum;
+        
+    }
+};
